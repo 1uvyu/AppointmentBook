@@ -47,7 +47,7 @@ public class AppointmentBook
     public void printPeriod(int period)
     {
         for(int i = 0; i < schedule[period - 1].length; i++)
-        System.out.println(i + " " + schedule[period - 1][i]);
+            System.out.println(i + " " + schedule[period - 1][i]);
     }
 
     private void reserveBlock(int period, int startMinute, int duration)

@@ -6,7 +6,7 @@ public class Main
     {
         boolean[][] schedule = new boolean[8][60];
         AppointmentBook a = new AppointmentBook(schedule);
-//        System.out.println(a);
+        System.out.println(a);
         for(int i = 10; i < 15; i++) schedule[1][i] = true;
         for(int i = 30; i < 45; i++) schedule[1][i] = true;
         for(int i = 50; i < 60; i++) schedule[1][i] = true;
@@ -33,9 +33,15 @@ public class Main
         b.printPeriod(4);
         System.out.println(b.makeAppointment(2, 4, 22));
         b.printPeriod(4);
+        System.out.println();
+        System.out.println("Period 3:");
+        b.printPeriod(3);
         System.out.println(b.makeAppointment(3, 4, 3));
         b.printPeriod(3);
-
-
+        System.out.println();
+        System.out.println("Period 2:");
+        b.printPeriod(2);
+        System.out.println(b.makeAppointment(2, 4, 30));
+        b.printPeriod(2);
     }
 }

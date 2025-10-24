@@ -1,4 +1,7 @@
+import java.io.FileNotFoundException;
 import java.sql.SQLOutput;
+import java.io.File;
+import java.util.Scanner;
 
 public class Main
 {
@@ -45,4 +48,11 @@ public class Main
         System.out.println(b.makeAppointment(2, 4, 30));
         b.printPeriod(2);
     }
+
+    public static int read() throws FileNotFoundException
+    {
+        int fulfilled = 0;
+
+    }
+
 }

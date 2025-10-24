@@ -29,6 +29,7 @@ public class Main
             b.printPeriod(period);
             period++;
         }
+
         System.out.println("Period 4:");
         b.printPeriod(4);
         System.out.println(b.makeAppointment(2, 4, 22));

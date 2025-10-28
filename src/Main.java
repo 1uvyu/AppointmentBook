@@ -49,6 +49,20 @@ public class Main
         b.printPeriod(2);
     }
 
+    public static boolean[][] readSchedule(String lines)
+    {
+        Scanner s = new Scanner(lines);
+        boolean[][] schedule = new boolean[8][60];
+        for (int i = 0; i < schedule.length; i++)
+        {
+            for (int j = 0; j < schedule[i].length; j++)
+            {
+                schedule[i][j] = s.nextBoolean();
+            }
+        }
+        return schedule;
+    }
+
     public static int read() throws FileNotFoundException
     {
         int meetings = 0;
@@ -59,6 +73,7 @@ public class Main
         {
             schedule += s.nextBoolean() + " ";
             AppointmentBook a = new AppointmentBook(readSchedule(schedule));
+
         }
 
 

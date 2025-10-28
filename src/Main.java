@@ -51,7 +51,16 @@ public class Main
 
     public static int read() throws FileNotFoundException
     {
-        int fulfilled = 0;
+        int meetings = 0;
+        File f = new File("Schedules.txt");
+        Scanner s = new Scanner(f);
+        String schedule = "";
+        while (s.hasNext())
+        {
+            schedule += s.nextBoolean() + " ";
+            AppointmentBook a = new AppointmentBook(readSchedule(schedule));
+        }
+
 
     }
 

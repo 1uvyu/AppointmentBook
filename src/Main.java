@@ -77,6 +77,7 @@ public class Main
             while (s.hasNextBoolean())
             {
                 schedule += s.nextBoolean() + " ";
+                }
                 AppointmentBook a = new AppointmentBook(readSchedule(schedule));
                 schedule = "";
                 if (a.makeAppointment(s.nextInt(), s.nextInt(), s.nextInt()))
@@ -84,7 +85,6 @@ public class Main
                     meetings++;
                 }
             }
-        }
         return meetings;
     }
 
